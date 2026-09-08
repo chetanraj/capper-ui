@@ -27,6 +27,7 @@ const groups: NavGroup[] = [
     items: [
       { to: '/components/box', label: 'Box' },
       { to: '/components/text', label: 'Text' },
+      { to: '/components/gradient-text', label: 'Gradient text' },
       { to: '/components/code', label: 'Code' },
       { to: '/components/button', label: 'Button' },
       { to: '/components/input', label: 'Input' },

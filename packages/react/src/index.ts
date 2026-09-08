@@ -1,5 +1,6 @@
 export { Box } from './atoms/Box';
 export { Text } from './atoms/Text';
+export { GradientText } from './atoms/GradientText';
 export { Button } from './atoms/Button';
 export { Stack } from './atoms/Stack';
 export { Inline } from './atoms/Inline';

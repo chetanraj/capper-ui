@@ -51,11 +51,6 @@
   letter-spacing: var(--c-tracking-tight);
   line-height: var(--c-leading-tight);
   text-wrap: balance;
-
-  /* Hero heading: text gradient only (not backgrounds) */
-  background-image: linear-gradient(90deg, var(--c-text) 0%, var(--c-text-muted) 100%);
-  background-clip: text;
-  color: transparent;
 }
 
 .heroTitleMuted {

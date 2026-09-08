@@ -2,6 +2,12 @@
 
 All notable changes to `@capper-ui/react` are documented here.
 
+## 0.0.4 — 2026-09-08
+
+### Added
+
+- `GradientText` for h1, h2, and h3 with `ink`, `accent`, `warm`, and `soft` token gradients.
+
 ## 0.0.3 — 2026-09-08
 
 ### Changed

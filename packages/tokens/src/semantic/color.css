@@ -137,3 +137,13 @@
   --c-code-block-border: var(--c-border);
   --c-shadow-color: 0deg 0% 0%;
 }
+
+/* Text gradients resolve against the active theme's semantic colors. */
+:root,
+[data-theme="light"],
+[data-theme="dark"] {
+  --c-text-gradient-ink: linear-gradient(90deg, var(--c-text) 0%, var(--c-text-muted) 100%);
+  --c-text-gradient-accent: linear-gradient(90deg, var(--c-accent) 0%, var(--c-text) 100%);
+  --c-text-gradient-warm: linear-gradient(90deg, var(--c-accent) 0%, var(--c-warning) 100%);
+  --c-text-gradient-soft: linear-gradient(90deg, var(--c-text) 0%, var(--c-accent) 100%);
+}

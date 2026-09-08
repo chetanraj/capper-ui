@@ -1,0 +1,30 @@
+.root {
+  max-width: 100%;
+  margin: 0;
+  background-image: var(--c-text-gradient-ink);
+
+  /* stylelint-disable property-no-vendor-prefix -- Safari clips gradient text only with prefixes */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  /* stylelint-enable property-no-vendor-prefix */
+  text-wrap: balance;
+}
+
+.variant-ink {
+  background-image: var(--c-text-gradient-ink);
+}
+
+.variant-accent {
+  background-image: var(--c-text-gradient-accent);
+}
+
+.variant-warm {
+  background-image: var(--c-text-gradient-warm);
+}
+
+.variant-soft {
+  background-image: var(--c-text-gradient-soft);
+}

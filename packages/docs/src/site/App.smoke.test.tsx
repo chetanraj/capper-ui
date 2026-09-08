@@ -22,6 +22,7 @@ const routes: { path: string; heading: string | RegExp }[] = [
   { path: '/tokens/radius-shadow', heading: 'Radius & shadow' },
   { path: '/components/box', heading: 'Box' },
   { path: '/components/text', heading: 'Text' },
+  { path: '/components/gradient-text', heading: 'Gradient text' },
   { path: '/components/code', heading: 'Code' },
   { path: '/components/button', heading: 'Button' },
   { path: '/components/input', heading: 'Input' },

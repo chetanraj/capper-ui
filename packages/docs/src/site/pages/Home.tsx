@@ -1,4 +1,4 @@
-import { ArrowRight, CodeBlock, Icon } from '@capper-ui/react';
+import { ArrowRight, CodeBlock, GradientText, Icon } from '@capper-ui/react';
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { FeatureCard } from '../components/FeatureCard/FeatureCard';
@@ -139,10 +139,16 @@ export function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>
+            <GradientText
+              as="h1"
+              variant="ink"
+              size="5xl"
+              weight="bold"
+              className={styles.heroTitle ?? ''}
+            >
               Capper UI
               <span className={styles.heroTitleMuted}> for token first React UI</span>
-            </h1>
+            </GradientText>
             <p className={styles.heroSubtitle}>
               A token first React design system on Brad Frost atomic design. Primitives, semantic
               tokens, and components that stay consistent from first commit to product scale.

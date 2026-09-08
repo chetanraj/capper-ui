@@ -13,13 +13,17 @@
 }
 
 .startGroup {
-  min-width: 0;
+  display: flex;
   align-items: center;
+  gap: var(--c-space-6);
+  min-width: 0;
 }
 
 .endGroup {
-  flex-shrink: 0;
+  display: flex;
   align-items: center;
+  gap: var(--c-space-2);
+  flex-shrink: 0;
 }
 
 .brand {
@@ -45,7 +49,6 @@
   height: 20px;
   border-radius: var(--c-radius-sm);
   background-color: var(--c-accent);
-  mask: url("/favicon.ico") center / contain no-repeat;
 }
 
 .nav {
@@ -124,12 +127,15 @@
 .ghLink {
   display: inline-flex;
   align-items: center;
+  gap: var(--c-space-2);
   height: 34px;
   padding: 0 var(--c-space-2);
   box-sizing: border-box;
+  color: var(--c-text-muted);
 }
 
 .ghLink:hover {
+  color: var(--c-text);
   text-decoration: none;
 }
 
@@ -150,5 +156,9 @@
 @media (width <= 767px) {
   .topbar {
     padding: 0 var(--c-space-4);
+  }
+
+  .ghLabel {
+    display: none;
   }
 }

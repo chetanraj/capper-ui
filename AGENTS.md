@@ -17,7 +17,7 @@ This file is loaded into agent context so you do not need to re-explain stack, p
 | Package | Role |
 |---------|------|
 | `@capper-ui/tokens` | CSS custom properties: primitives + semantic tokens, light/dark theming |
-| `@capper-ui/react` | React atoms: `Box`, `Text`, `Button`, `Input`, `Link`, `Badge`, `Alert`, `Icon`, `InlineCode`, `CodeBlock`, `Stack`, `Inline`, and molecule `Card` |
+| `@capper-ui/react` | React atoms: `Box`, `Text`, `GradientText`, `Button`, `Input`, `Link`, `Badge`, `Alert`, `Icon`, `InlineCode`, `CodeBlock`, `Stack`, `Inline`, and molecule `Card` |
 | `@capper-ui/docs` | Documentation site + Storybook |
 
 **Docs site (Netlify):** [capper-ui-docs.netlify.app](https://capper-ui-docs.netlify.app). Config in `netlify.toml`; CLI deploy: `netlify deploy --prod --filter @capper-ui/docs`.

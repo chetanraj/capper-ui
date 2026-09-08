@@ -8,6 +8,7 @@ import { BoxPage } from './pages/components/BoxPage';
 import { ButtonPage } from './pages/components/ButtonPage';
 import { CardPage } from './pages/components/CardPage';
 import { CodePage } from './pages/components/CodePage';
+import { GradientTextPage } from './pages/components/GradientTextPage';
 import { IconPage } from './pages/components/IconPage';
 import { InlinePage } from './pages/components/InlinePage';
 import { InputPage } from './pages/components/InputPage';
@@ -31,6 +32,7 @@ export function App() {
         <Route path="/tokens/radius-shadow" element={<RadiusShadowTokensPage />} />
         <Route path="/components/box" element={<BoxPage />} />
         <Route path="/components/text" element={<TextPage />} />
+        <Route path="/components/gradient-text" element={<GradientTextPage />} />
         <Route path="/components/code" element={<CodePage />} />
         <Route path="/components/button" element={<ButtonPage />} />
         <Route path="/components/input" element={<InputPage />} />
