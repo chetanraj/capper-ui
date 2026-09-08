@@ -69,7 +69,7 @@ export function TopBar() {
 
       <Inline align="center" gap="sm" className={styles.endGroup ?? ''}>
         <a
-          href="https://github.com/chetanraj/capper"
+          href="https://github.com/chetanraj/capper-ui"
           target="_blank"
           rel="noreferrer"
           className={styles.ghLink}
