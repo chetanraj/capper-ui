@@ -150,7 +150,7 @@ export function HomePage() {
             <div className={styles.heroActions}>
               <Link to="/components/button" className={styles.ctaPrimary}>
                 Browse components
-                <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
+                <Icon icon={ArrowRight} size="sm" aria-hidden />
               </Link>
               <Link to="/tokens/color" className={styles.ctaSecondary}>
                 View foundations
@@ -253,10 +253,10 @@ export function HomePage() {
               <div className={styles.heroActions}>
                 <Link to="/components/button" className={styles.ctaPrimary}>
                   Get started with Button
-                  <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
+                  <Icon icon={ArrowRight} size="sm" aria-hidden />
                 </Link>
                 <a
-                  href="https://github.com/chetanraj/capper"
+                  href="https://github.com/chetanraj/capper-ui"
                   target="_blank"
                   rel="noreferrer"
                   className={styles.ctaSecondary}
@@ -266,10 +266,7 @@ export function HomePage() {
               </div>
             </div>
             <div className={styles.finalCode}>
-              <CodeBlock
-                language="bash"
-                code="pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react"
-              />
+              <CodeBlock language="bash" code="pnpm add @capper-ui/tokens @capper-ui/react" />
             </div>
           </div>
         </RevealSection>
@@ -278,7 +275,7 @@ export function HomePage() {
       <footer className={styles.footer}>
         <p className={styles.footerCopy}>Capper UI is open source under the MIT license.</p>
         <nav className={styles.footerNav} aria-label="Footer">
-          <a href="https://github.com/chetanraj/capper" target="_blank" rel="noreferrer">
+          <a href="https://github.com/chetanraj/capper-ui" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <Link to="/tokens/color">Foundations</Link>

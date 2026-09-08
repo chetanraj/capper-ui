@@ -1,14 +1,20 @@
 import {
   ArrowLeft,
+  ArrowRight,
   Calendar,
+  Check,
+  ChevronDown,
+  Clipboard,
   Clock,
   Github,
   Icon,
   Inline,
   Instagram,
+  Linkedin,
   Monitor,
   Moon,
   Rss,
+  Search,
   Sun,
   Text,
   X,
@@ -19,16 +25,10 @@ import { type PropRow, PropsTable } from '../../components/PropsTable/PropsTable
 const rows: PropRow[] = [
   {
     name: 'icon',
-    type: 'PhosphorIcon',
-    description: 'Phosphor icon component, e.g. Sun or ArrowLeft.',
+    type: 'FeatherIcon',
+    description: 'Feather icon component, e.g. Sun or ArrowLeft.',
   },
   { name: 'size', type: "'sm' | 'md' | 'lg'", default: "'md'", description: 'Icon dimensions.' },
-  {
-    name: 'weight',
-    type: "'thin' | 'light' | 'regular' | 'bold' | 'fill' | 'duotone'",
-    default: "'regular'",
-    description: 'Phosphor weight variant.',
-  },
   {
     name: 'label',
     type: 'string',
@@ -41,35 +41,33 @@ const starterIcons = [
   { icon: Moon, label: 'Dark theme' },
   { icon: Monitor, label: 'System theme' },
   { icon: ArrowLeft, label: 'Back' },
+  { icon: ArrowRight, label: 'Forward' },
   { icon: Rss, label: 'RSS feed' },
+  { icon: Search, label: 'Search' },
   { icon: Calendar, label: 'Calendar' },
   { icon: Clock, label: 'Clock' },
+  { icon: ChevronDown, label: 'Expand' },
+  { icon: Check, label: 'Copied' },
+  { icon: Clipboard, label: 'Copy' },
   { icon: Github, label: 'GitHub' },
   { icon: Instagram, label: 'Instagram' },
+  { icon: Linkedin, label: 'LinkedIn' },
   { icon: X, label: 'X' },
 ] as const;
 
-const starterImport =
-  "import { ArrowLeft, Calendar, Clock, Github, Icon, Instagram, Monitor, Moon, Rss, Sun, X } from '@capper-ui/react';";
+const starterImport = "import { ArrowLeft, Icon, Search, Sun } from '@capper-ui/react';";
 
 const starterUsage = `<Icon icon={Sun} label="Light theme" />
-<Icon icon={Moon} label="Dark theme" />
-<Icon icon={Monitor} label="System theme" />
-<Icon icon={ArrowLeft} label="Back" />
-<Icon icon={Rss} label="RSS feed" />
-<Icon icon={Calendar} label="Calendar" />
-<Icon icon={Clock} label="Clock" />
-<Icon icon={Github} label="GitHub" />
-<Icon icon={Instagram} label="Instagram" />
-<Icon icon={X} label="X" />`;
+<Icon icon={Search} label="Search" />
+<Icon icon={ArrowLeft} label="Back" />`;
 
 export function IconPage() {
   return (
     <div className="prose">
       <Text as="h1">Icon</Text>
       <Text as="p" className="lede">
-        Capper UI uses MIT-licensed Phosphor icons through a thin wrapper that maps sizes to the
-        design system and inherits color from currentColor.
+        Capper UI ships MIT-licensed Feather icons as SVG components. The Icon wrapper maps sizes to
+        the design system and inherits color from currentColor. No extra icon package to install.
       </Text>
 
       <Text as="h2">Starter set</Text>

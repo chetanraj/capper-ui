@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      external: ['react', 'react-dom', '@capper-ui/tokens', '@phosphor-icons/react'],
+      external: ['react', 'react-dom', '@capper-ui/tokens'],
     },
   },
 });

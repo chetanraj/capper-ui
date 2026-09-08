@@ -10,7 +10,7 @@ This file is loaded into agent context so you do not need to re-explain stack, p
 
 **Capper UI** is a token-first React design system built on Brad Frost's atomic design principles.
 
-- **Repo:** https://github.com/chetanraj/capper (open source, MIT)
+- **Repo:** https://github.com/chetanraj/capper-ui (open source, MIT)
 - **Package manager:** pnpm (monorepo)
 - **npm:** `@capper-ui/tokens` and `@capper-ui/react` are installable from the public registry. Only the maintainer publishes releases; this repo has no publish scripts or CI for npm.
 
@@ -23,6 +23,8 @@ This file is loaded into agent context so you do not need to re-explain stack, p
 **Docs site (Netlify):** [capper-ui-docs.netlify.app](https://capper-ui-docs.netlify.app). Config in `netlify.toml`; CLI deploy: `netlify deploy --prod --filter @capper-ui/docs`.
 
 **Design System Ops** (local): `.claude/skills/design-system-ops/` — Claude Code skill pack for audits, docs coverage, release checks, and governance. Say e.g. "audit my tokens" or "run release pipeline for Button". Optional config: copy `ds-ops-config.example.yml` from that folder to repo root as `.ds-ops-config.yml`.
+
+**Design System Skills** (user plugin): [dylantarre/design-system-skills](https://github.com/dylantarre/design-system-skills) — token generators (color, spacing, type, motion), React patterns, a11y, Storybook. Start with `/getting-started` or "generate a spacing scale". Installed via `grok plugin install dylantarre/design-system-skills --trust`. Capper tokens and CSS Modules still win when this pack suggests Tailwind or a new token architecture.
 
 ---
 
@@ -60,7 +62,7 @@ pnpm test:coverage
 - Atomic layout: `packages/react/src/{atoms,molecules,organisms}`.
 - Atoms exist today; molecules and organisms are scaffolded for future work.
 - Each component owns a co-located `.module.css` file. No CSS-in-JS, no utility-class soup.
-- Icons use [Phosphor](https://phosphoricons.com) via the `Icon` atom and named exports (`Sun`, `Moon`, `Monitor`, `ArrowLeft`, `Rss`, `Calendar`, `Clock`, `Github`, `Instagram`, `X`).
+- Icons use MIT-licensed [Feather](https://feathericons.com) SVGs via the `Icon` atom. Named exports cover the blog set: `Sun`, `Moon`, `Monitor`, `ArrowLeft`, `ArrowRight`, `Rss`, `Search`, `Calendar`, `Clock`, `ChevronDown`, `Check`, `Clipboard`, `Github`, `Instagram`, `Linkedin`, `X`.
 - Generic reusable UI belongs in `@capper-ui/react`. Page-specific docs layout belongs in `@capper-ui/docs`.
 
 ### Docs site copy

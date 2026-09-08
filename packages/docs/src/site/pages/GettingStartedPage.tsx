@@ -1,7 +1,7 @@
 import { CodeBlock, Text } from '@capper-ui/react';
 import { Link } from 'react-router-dom';
 
-const installCode = 'pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react';
+const installCode = 'pnpm add @capper-ui/tokens @capper-ui/react';
 
 const themeScript = `<script>
   (function () {

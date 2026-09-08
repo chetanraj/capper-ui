@@ -29,8 +29,8 @@ Install recommended editor extensions from `.vscode/extensions.json` (Biome, Sty
 ## Local setup
 
 ```bash
-git clone https://github.com/chetanraj/capper.git
-cd capper
+git clone https://github.com/chetanraj/capper-ui.git
+cd capper-ui
 pnpm install
 pnpm dev          # docs site at http://localhost:5173
 pnpm storybook    # Storybook at http://localhost:6006
@@ -125,6 +125,6 @@ By contributing, you agree that your contributions will be licensed under the [M
 Capper UI bundles fonts and icons under their own licenses:
 
 - [Mona Sans](https://github.com/github/mona-sans) (SIL Open Font License 1.1) via `@fontsource-variable/mona-sans`
-- [Phosphor Icons](https://phosphoricons.com) (MIT) via `@phosphor-icons/react`
+- [Feather Icons](https://feathericons.com) (MIT), vendored as SVG components in `@capper-ui/react`
 
 When adding new dependencies, prefer permissive licenses and note them here if they ship with the library packages.

@@ -2,6 +2,16 @@
 
 All notable changes to `@capper-ui/react` are documented here.
 
+## 0.0.3 — 2026-09-08
+
+### Changed
+
+- Icons are now Feather SVGs bundled in the package. `@phosphor-icons/react` is no longer a dependency.
+
+### Added
+
+- Named icon exports used by the blog: `Check`, `ChevronDown`, `Clipboard`, `Linkedin`, `Search`, plus the existing starter set.
+
 ## 0.0.2 — 2026-08-10
 
 ### Added

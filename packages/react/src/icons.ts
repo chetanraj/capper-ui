@@ -2,12 +2,18 @@ export {
   ArrowLeft,
   ArrowRight,
   Calendar,
+  Check,
+  ChevronDown,
+  Clipboard,
   Clock,
-  GithubLogo as Github,
-  InstagramLogo as Instagram,
+  Github,
+  Instagram,
+  Linkedin,
   Monitor,
   Moon,
   Rss,
+  Search,
   Sun,
-  XLogo as X,
-} from '@phosphor-icons/react';
+  X,
+} from './icons/feather';
+export type { FeatherIconProps } from './icons/feather';

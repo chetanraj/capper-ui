@@ -18,7 +18,7 @@ principles.
 ## Install
 
 ```bash
-pnpm add @capper-ui/tokens @capper-ui/react @phosphor-icons/react
+pnpm add @capper-ui/tokens @capper-ui/react
 ```
 
 ```tsx
@@ -29,8 +29,8 @@ import { Button, Icon, Sun } from '@capper-ui/react';
 ## Develop this repo
 
 ```bash
-git clone https://github.com/chetanraj/capper.git
-cd capper
+git clone https://github.com/chetanraj/capper-ui.git
+cd capper-ui
 pnpm install
 pnpm dev          # docs site at localhost:5173
 pnpm storybook    # Storybook at localhost:6006

@@ -4,7 +4,7 @@ import { Sun } from '../../icons';
 import { Icon } from './Icon';
 
 describe('Icon', () => {
-  it('renders a phosphor svg', () => {
+  it('renders a feather svg', () => {
     const { container } = render(<Icon icon={Sun} aria-hidden />);
     expect(container.querySelector('svg')).toBeInTheDocument();
   });

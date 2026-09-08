@@ -38,7 +38,7 @@ export function FeatureCard({
         <p className={styles.description}>{description}</p>
         <span className={styles.action}>
           {actionLabel}
-          <Icon icon={ArrowRight} size="sm" weight="bold" aria-hidden />
+          <Icon icon={ArrowRight} size="sm" aria-hidden />
         </span>
       </div>
     </Link>
